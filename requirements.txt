@@ -1,0 +1,14 @@
+certifi==2020.11.8
+chardet==3.0.4
+idna==2.10
+iso-639==0.4.5
+iso3166==1.0.1
+isodate==0.6.0
+pyacrcloud==1.0.2
+pycryptodome==3.9.9
+PySocks==1.7.1
+requests==2.25.0
+six==1.15.0
+streamlink==1.7.0
+urllib3==1.26.2
+websocket-client==0.57.0
