@@ -9,9 +9,9 @@ env:
     - DOCKER_USER=alex4108
 
 script:
-- echo "Logging in as ${DOCKER_USERNAME}"
-- docker login --username "${DOCKER_USERNAME}" -p "$DOCKER_PASSWORD"
+- echo "Logging in as ${DOCKER_USER}"
+- docker login --username "${DOCKER_USER}" -p "$DOCKER_PASSWORD"
 - docker build -t traccy .
 - docker images
-- docker tag traccy $DOCKER_USERNAME/traccy
-- docker push $DOCKER_USERNAME/traccy
+- docker tag traccy $DOCKER_USER/traccy
+- docker push $DOCKER_USER/traccy
