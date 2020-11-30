@@ -3,14 +3,10 @@ language: bash
 branches:
   only:
   - master
-env:
-  global:
-    - secure: "XSoYb6v5xBf4iFvk0rThvqbGXBjI8aNthFZ+hqqZtedPnpnf6YtiImOGv+Y5hRUqceZkOsSbs0n1vpyPav5z26zOLhqEsyhkUzYlL9jJY4hZK9t7l9OkYEAVn5gBGybHfZztDnEY/VHLIspGGUigTxPMF5lhpq4w7aDytU19citeLwcGGmUr8WvIQB6/UEmuwF/TFTZt0UX9wnc08Ju6/t5ppbc3QY+z6TFJGe0brH2Xcpmq8HD+2be4VY3hByNVCb/IUztdPeOJ/DeXxQw1NkF35dagL6mXWXndxz546rh7CSAMWFGgDuNRpu/oFE2bjHZRAt/0GPccteZ8Ey1D9pxjrcn8wZXYhC1x6Oe8ZfHbAi+kP6ue9Q+Sx6BKgt/LFILll2g+5CCOXfwK59NG9hQOtKjUfJAMCpcaAYeQb/ajG/O/7nEr1bU7RqGhcFAGoYIQnmFl1migwjfLvCDEV1ddrOt7g37zWAls8SzwmnGSHnaEh7FiqffIewSRs7DQfoScq5e+Fn8TDYKtnLgbDK4VUjSGtpuw4R+2hyLR+0hlGceI2xojrBQ3/nOQfpGgmgw/yohVNaAU9PvlgN/abiO+BEGDowW6K06lp5dy9oMu9cdiBMi9mE/WaS3O63B9Krl4uiKcvsRpC7hrjg6EIh3um39GeR9ni0o00D2c62o="
-    - DOCKER_USER=alex4108
 
 script:
 - echo "Logging in as ${DOCKER_USER}"
-- docker login --username "${DOCKER_USER}" -p "$DOCKER_PASSWORD"
+- docker login -u "${DOCKER_USER}" -p "${DOCKER_PASS}"
 - docker build -t traccy .
 - docker images
 - docker tag traccy $DOCKER_USER/traccy
