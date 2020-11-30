@@ -6,8 +6,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/alex4108/Traccy)](https://github.com/alex4108/Traccy/network)
 [![GitHub stars](https://img.shields.io/github/stars/alex4108/Traccy)](https://github.com/alex4108/Traccy/stargazers)
 ![GitHub contributors](https://img.shields.io/github/contributors/alex4108/Traccy)
-[![GitHub license](https://img.shields.io/github/license/alex4108/Traccy)](https://github.com/alex4108/Traccy/blob/master/LICENSE)
-![GitHub All Releases](https://img.shields.io/github/downloads/alex4108/Traccy/total)
 ![Docker Pulls](https://img.shields.io/docker/pulls/alex4108/traccy)
 
 # Description
@@ -48,7 +46,9 @@ If you update the python packages in your venv, you probably should freeze the v
 
 ## Docker
 
-Need to rebuild the 
+Need to rebuild the conatiner? Easy: `docker build -t alex4108/traccy .`
+
+Want to run the app in-container? `docker run -t alex4108/traccy`
 
 ## Useful links
 
